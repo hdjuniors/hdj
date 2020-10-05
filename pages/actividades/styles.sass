@@ -1,0 +1,125 @@
+@import "../../sass/_variables.sass"
+@import "../../sass/common_styles.sass"
+@import "../../sass/reset.sass"
+
+html, body, .container
+  color: darken($actividades-primario, 25)
+  background: $actividades-secundario
+
+.sections
+  position: relative
+
+  .menu-section
+    background-color: lighten($actividades-primario, 10)
+
+    border-color: darken($actividades-primario, 10)
+
+    li > ul
+      border-left: 3px solid $actividades-primario
+      li
+        border-color: $actividades-primario
+
+  .present-section
+    display: -webkit-flex
+    display: -ms-flex
+    display: flex
+    justify-content: center
+    align-items: center
+
+    width: 100%
+    h1
+      text-align: center
+
+      font-size: 2em
+      font-weight: bold
+      text-decoration: underline
+      color: white
+
+  .act-section, .image-section, .present-section
+    max-height: 100vh
+
+  .act-section
+    @media (max-width: $medium)
+      width: 100%
+    @media (min-width: $medium)
+      width: 70%
+
+    background: $actividades-secundario
+    // Color de las actividades
+
+    display: -webkit-flex
+    display: -ms-flex
+    display: flex
+    justify-content: center
+
+    display: none
+
+    iframe
+      @media (max-width: $medium)
+        width: 100%
+      @media (min-width: $medium)
+        height: 100%
+
+
+  .image-section
+    display: -webkit-flex
+    display: -ms-flex
+    display: flex
+    justify-content: center
+    align-items: center
+
+    width: 100%
+
+    display: none
+
+    img
+      border: 3px solid #000
+
+      &.vertical
+        height: 100vh
+        width: auto
+
+      &.horizontal
+        height: auto
+        width: 80%
+
+.accordion-container
+  width: 100%
+
+  &.show .toggle-icon
+    .fa-minus
+      display: inline
+    .fa-plus
+      display: none
+  &.hide .toggle-icon
+    .fa-plus
+      display: inline
+    .fa-minus
+      display: none
+
+  .accordion-titulo
+    display: block
+
+    padding: .5em
+    margin-top: .5em
+    border-radius: 15px 0 15px 0
+
+    font-size: 1.35em
+    font-weight: bold
+    color: $font-color
+
+    background: darken($actividades-primario, 5)
+
+    position: relative
+
+    cursor: pointer
+
+    .toggle-icon
+      position: absolute
+      right: 0
+
+      margin-right: .25em
+      padding: 0 .5em
+
+  .accordion-content
+    font-size: 1.25em

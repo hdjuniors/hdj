@@ -1,0 +1,6 @@
+Lista de tareas pendientes
+
+1) Elegir las imagenes y subirlas. Despues incluirlas en el js de la galeria.
+2) Convertir todo a JADE e implementar una programacion mas ordenada.
+4) Hacer los dos videos sobre como usar la página.
+5) Comprimir todas las imagenes.

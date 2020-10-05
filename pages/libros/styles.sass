@@ -1,0 +1,39 @@
+@import "../../sass/_variables.sass"
+@import "../../sass/common_styles.sass"
+@import "../../sass/reset.sass"
+
+.container
+  display: -webkit-flex
+  display: -ms-flex
+  display: flex
+  justify-content: center
+  flex-wrap: wrap
+
+  background: $libros-primario
+
+.libro
+  display: none
+
+  @media (max-width: $less)
+    width: 90%
+  @media (max-width: $medium) and (min-width: $less)
+    width: 45%
+  @media (max-width: $most) and (min-width: $medium)
+    width: 30%
+  @media (min-width: $most)
+    width: 20%
+
+  padding: .25em
+  margin: .25em
+
+  img
+    width: 100%
+
+    border: 2px dashed $libros-secundario
+
+    transition: box-shadow .25s
+
+    &:hover
+      box-shadow: 0 0 5px 5px $libros-secundario
+
+      transition: box-shadow .25s

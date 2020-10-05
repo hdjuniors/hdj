@@ -1,0 +1,116 @@
+@import "_variables.sass"
+
+html, body, .container
+  min-height: 100vh
+
+  color: $font-color
+
+// Etiqueta "pre" reservada para los videos embedidos de YouTube
+pre
+  .video-responsive
+    position: relative
+    padding-bottom: 56.25%
+    padding-top: 30px
+    height: 0
+    overflow: hidden
+
+    iframe
+      position: absolute
+      top: 0
+      left: 0
+      width: 100%
+      height: 100%
+
+// Secciones hay en casi todos los archivos
+// Aunque no todas son 30 - 70
+.sections
+  display: -webkit-flex
+  display: -ms-flex
+  display: flex
+
+  @media (max-width: $medium)
+    flex-direction: column
+  @media (min-width: $medium)
+    flex-direction: row
+
+  .menu-section
+    @media (max-width: $medium)
+      width: 100%
+    @media (min-width: $medium)
+      width: 30%
+      border-right: 3px solid $white
+      min-height: 100vh
+
+    padding: .5em 2em
+    h1
+      font-size: 2em
+      text-align: center
+
+      padding-bottom: .25em
+      border-bottom: 3px solid
+
+      position: relative
+
+      &.show .toggle-icon
+        .fa-minus
+          display: inline
+        .fa-plus
+          display: none
+      &.hide .toggle-icon
+        .fa-plus
+          display: inline
+        .fa-minus
+          display: none
+
+      .toggle-icon
+        @media (max-width: $medium)
+          .fas
+            position: absolute
+            right: 0
+
+            margin-right: .25em
+            padding: 0 .5em
+        @media (min-width: $medium)
+          display: none
+
+    ul
+      li
+        font-size: 1em
+
+        margin: .5em 0
+        padding: .15em .25em
+        border-bottom: 1px solid
+        padding-right: .25em
+
+        transition: padding-left .5s
+
+        cursor: pointer
+
+        &:hover
+          padding-left: 1em
+
+          transition: padding-left .5s
+
+        &:last-child
+          border-bottom: none
+
+        a
+          color: $font-color
+
+          display: block
+
+        ul
+          li
+            font-size: 0.75em
+
+::-webkit-scrollbar
+  width: 15px
+
+::-webkit-scrollbar-track
+  background-image: linear-gradient(180deg, $pink, $red, $orange, $yellow, $green, $teal, $blue, $purple, $violet)
+
+::-webkit-scrollbar-thumb
+  background: rgba(white, 0.5)
+
+::-webkit-scrollbar-thumb:hover
+  background: rgba(white, 0.75)

@@ -1,0 +1,239 @@
+@import "_variables.sass"
+
+html, body, .container
+  width: 100%
+  min-height: 100vh
+
+  color: $font-color
+
+.back-video
+  position: fixed
+  z-index: $background_index
+  top: 0
+  left: 0
+  right: 0
+  bottom: 0
+
+  overflow: hidden
+
+  video
+    width: 100%
+    height: auto
+
+    filter: blur(3px)
+
+  .effect-layer
+    position: absolute
+    top: 0
+    left: 0
+    bottom: 0
+    right: 0
+    z-index: $effect_layer_index
+
+    background-image: linear-gradient(to right, $pink, $red, $orange, $yellow, $green, $teal, $blue, $purple, $violet)
+
+    opacity: 0.7
+
+
+.sections
+  position: relative
+  z-index: $sections_index
+
+  @media (max-width: $medium)
+    padding-top: 1em
+  @media (min-width: $medium)
+    padding-top: 0
+
+  & > div
+    @media (max-width: $medium)
+      width: 100%
+    @media (min-width: $medium)
+      width: 50%
+
+  .left-section
+    display: -webkit-flex
+    display: -ms-flex
+    display: flex
+    justify-content: center
+    align-items: center
+
+    min-height: 100vh
+
+    .img-wrapper
+      width: 90%
+
+      position: relative
+
+      &:hover > div
+        opacity: 1
+
+        transition: opacity 0.5s
+
+      .over-text
+        @media (max-width: $medium)
+          opacity: 1
+          transition: opacity 0.5s
+        @media (min-width: $medium)
+          opacity: 0
+
+        position: absolute
+        top: 0
+        bottom: 0
+        z-index: $over_text_index
+
+        width: calc(100%)
+
+        background: rgba($black, .7)
+
+        display: -webkit-flex
+        display: -ms-flex
+        display: flex
+        justify-content: center
+        align-items: center
+
+        p
+          width: 80%
+
+          font-size: 1.25em
+
+      & > img
+        width: 100%
+
+        border: 5px solid $black
+
+  .divider
+    width: 3px
+
+  .right-section
+    .titulo
+      display: -webkit-flex
+      display: -ms-flex
+      display: flex
+      justify-content: flex-end
+
+      padding: 1em
+      border-bottom: 3px solid $black
+      // Con Javascript vamos a hacer que esto cambie constantemente
+
+      h1
+        font-size: 4em
+      img
+        width: 10%
+
+        padding-left: 1em
+
+    .opciones
+      padding: 1em
+
+      overflow-x: hidden
+
+      ul
+        li
+          margin: .5em
+          border-radius: 10px 0 0 10px
+
+          transform: translateX(50%)
+
+          transition: transform .5s
+
+          cursor: pointer
+
+          background: rgba($white, .7)
+
+          a
+            font-size: 1.5em
+            color: $violet
+            font-weight: bold
+
+            padding: .75em
+
+            display: block
+
+          &:hover
+            transform: translateX(30%)
+
+            transition: transform .5s
+
+            a
+              color: $purple
+
+          &:last-child
+            background: $violet
+            a
+              color: $white
+
+  .divider.to_pink
+    background-color: $pink
+  .right-section .titulo.to_pink, .left-section img.to_pink
+    border-color: $pink
+    color: $pink
+  .divider.to_red
+    background-color: $red
+  .right-section .titulo.to_red, .left-section img.to_red
+    border-color: $red
+    color: $red
+  .divider.to_orange
+    background-color: $orange
+  .right-section .titulo.to_orange, .left-section img.to_orange
+    border-color: $orange
+    color: $orange
+  .divider.to_yellow
+    background-color: $yellow
+  .right-section .titulo.to_yellow, .left-section img.to_yellow
+    border-color: $yellow
+    color: $yellow
+  .divider.to_green
+    background-color: $green
+  .right-section .titulo.to_green, .left-section img.to_green
+    border-color: $green
+    color: $green
+  .divider.to_teal
+    background-color: $teal
+  .right-section .titulo.to_teal, .left-section img.to_teal
+    border-color: $teal
+    color: $teal
+  .divider.to_blue
+    background-color: $blue
+  .right-section .titulo.to_blue, .left-section img.to_blue
+    border-color: $blue
+    color: $blue
+  .divider.to_violet
+    background-color: $violet
+  .right-section .titulo.to_violet, .left-section img.to_violet
+    border-color: $violet
+    color: $violet
+  .divider.to_purple
+    background-color: $purple
+  .right-section .titulo.to_purple, .left-section img.to_purple
+    border-color: $purple
+    color: $purple
+
+  .divider, .right-section .titulo, .left-section img
+    transition: border-color 1s, color 1s, background-color 1s
+    .to_pink, .to_red, .to_orange, .to_yellow, .to_green, .to_teal, .to_blue, .to_violet, .to_purple
+    transition: border-color 1s, color 1s, background-color 1s
+
+
+.description-box
+  &.show
+    opacity: 1
+
+    transition: opacity 0.5s
+  &.hide
+    opacity: 0
+
+    transition: opacity 0.5s
+
+  position: fixed
+  bottom: 0
+  left: 50%
+
+  transform: translateX(-50%)
+
+  background: rgba($black, .5)
+
+  padding: .5em
+  border-radius: 10px 10px 0 0
+
+  font-size: 1.2em
+  text-align: center

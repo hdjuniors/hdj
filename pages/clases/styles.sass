@@ -1,0 +1,18 @@
+@import "../../sass/_variables.sass"
+@import "../../sass/common_styles.sass"
+@import "../../sass/reset.sass"
+
+html, body, .container
+  background: darken($clases-primario, 10)
+  color: $font-color
+
+.sections
+  .menu-section
+    background: lighten($clases-primario, 10)
+
+  .video-section
+    @media (max-width: $medium)
+      width: 100%
+      padding-top: 1em
+    @media (min-width: $medium)
+      width: 70%

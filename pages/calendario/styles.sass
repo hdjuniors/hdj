@@ -1,0 +1,138 @@
+@import "../../sass/_variables.sass"
+@import "../../sass/common_styles.sass"
+@import "../../sass/reset.sass"
+
+.container
+  background: $calendario-primario
+
+  display: -webkit-flex
+  display: -ms-flex
+  display: flex
+
+  @media (max-width: $medium)
+    flex-direction: column
+    align-items: center
+
+    .calendar, .datetable
+      width: 100%
+      .events
+        padding: 1em
+  @media (min-width: $medium)
+    flex-direction: row
+    justify-content: center
+
+    .calendar
+      width: 69%
+    .datetable
+      width: 29%
+
+.calendar
+  margin-right: 2%
+
+  .list
+    &.done::before
+      content: " "
+
+      width: 95%
+      height: 2px
+
+      position: absolute
+      top: 50%
+      left: 50%
+      z-index: 10000
+
+      transform: translateY(-50%)
+      transform: translateX(-50%)
+
+      background: $calendario-secundario
+
+    i
+      width: 5%
+
+      text-align: center
+
+h1
+  font-size: 2em
+  text-align: center
+
+  padding: .5em
+  border-bottom: 3px solid $calendario-secundario
+
+  position: relative
+
+  .gotobottom
+    @media (max-width: $medium)
+      display: block
+    @media (min-width: $medium)
+      display: none
+
+    position: absolute
+    right: 10px
+    top: 50%
+    z-index: 10000
+
+    transform: translateY(-50%)
+
+    padding: .25em .5em
+    border-top: 3px solid lighten($purple, 10)
+
+.events
+  padding: .5em
+
+  &.today
+    background: $purple
+
+  h2
+    font-size: 1em
+    text-decoration: underline
+
+.list
+  li
+    padding: .5em
+    margin: .5em 2em
+
+    font-size: 1.25em
+
+    background: lighten($calendario-terciario, 10)
+
+    position: relative
+
+    &:hover
+      background: darken($calendario-terciario, 20)
+
+      cursor: pointer
+
+      transform: scale(1)
+
+      transition: transform .5s
+
+      i
+        transform: scale(1.5)
+
+        transition: transform .5s
+
+.gototop
+  @media (max-width: $medium)
+    display: block
+  @media (min-width: $medium)
+    display: none
+
+  padding: 1em
+  margin-bottom: 1em
+  border-bottom: 3px solid lighten($purple, 10)
+
+.divider
+  margin: 1em 0
+  text-align: center
+
+  display: -webkit-flex
+  display: -ms-flex
+  display: flex
+  justify-content: space-around
+  align-items: center
+
+  span
+    width: 42%
+
+    background: darken($calendario-terciario, 20)
+    height: 3px
