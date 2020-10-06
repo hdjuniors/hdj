@@ -1,6 +1,8 @@
+@import url("https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@300;600&display=swap");
 html, body, .container {
   min-height: 100vh;
   color: #dddadb;
+  font-family: "Sansita Swashed", cursive;
 }
 
 pre .video-responsive {

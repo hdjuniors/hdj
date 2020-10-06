@@ -18,11 +18,21 @@
     "https://www.youtube.com/embed/wvUwDs6xmuk",
     "https://www.youtube.com/embed/XioytlvQ_rY",
     "https://www.youtube.com/embed/8Fyni8rI3X0",
-    ""// ACA IRIA LA CLASE 19, DEL ULTIMO MANDAMIENTO
-  ]
+    "https://www.youtube.com/embed/I0x2K6RN61U",
+    "https://www.youtube.com/embed/YT43w2nS6qk",
+    "https://www.youtube.com/embed/Sda5CVw2CCw",
+    "https://www.youtube.com/embed/GDxDuJ2KOQs"
+  ].reverse();
 
   $(document).ready(function() {
     config_menu();
+
+    var list = $("ul");
+    var listItems = list.children('li');
+    list.append(listItems.get().reverse());
+    // Volteamos la lista de clases para que se vean primero las ultimas
+
+    $('.video-section').find('iframe').attr('src', url_list[0]);
 
     $('.menu-section').find('ul').find('li').on('click', function() {
       indice = $('.menu-section').find('ul').find('li').index($(this));

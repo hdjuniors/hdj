@@ -29,6 +29,13 @@
   $(document).ready(function() {
     config_menu();
 
+    var $list = $(".accordion-content > ul");
+    var listItems = null;
+    for (var i = 0; i < $list.length; i++) {
+      $listItems = $list.eq(i).children("li");
+      $list.eq(i).append($listItems.get().reverse());
+    }
+
     var $contenido = $(".accordion-content");
     for (var i = 0; i <= $contenido.length; i++) {
       $contenido.eq(i).slideUp(0).parent().addClass("hide");
