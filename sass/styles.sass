@@ -35,7 +35,6 @@ html, body, .container
 
     opacity: 0.7
 
-
 .sections
   position: relative
   z-index: $sections_index
@@ -110,11 +109,12 @@ html, body, .container
       display: -webkit-flex
       display: -ms-flex
       display: flex
-      justify-content: flex-end
+      justify-content: space-between
+      align-items: center
 
       padding: 1em
       border-bottom: 3px solid $black
-      // Con Javascript vamos a hacer que esto cambie constantemente
+      // Javascript hace que esto cambie constantemente
 
       h1
         font-size: 4em
@@ -122,6 +122,30 @@ html, body, .container
         width: 10%
 
         padding-left: 1em
+
+      .social-media
+        display: -webkit-flex
+        display: -ms-flex
+        display: flex
+        justify-content: flex-start
+
+        @media (max-width: $medium)
+          .social-icon
+            width: 100%
+        @media (min-width: $medium)
+          .social-icon
+            width: 30%
+
+        .social-icon
+          img
+            width: 100%
+            height: auto
+
+      .title
+        display: -webkit-flex
+        display: -ms-flex
+        display: flex
+        justify-content: flex-end
 
     .opciones
       padding: 1em

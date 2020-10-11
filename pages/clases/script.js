@@ -39,6 +39,8 @@
       url = url_list[indice];
 
       $('.video-section').find('iframe').attr('src', url);
+
+      $(window).scrollTop(0);
     });
     // IMPORTANTE: Programa solamente para menus de 1 nivel
 

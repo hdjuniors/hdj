@@ -564,7 +564,6 @@ h1 .gotobottom {
 }
 .list li:hover {
   background: #402464;
-  cursor: pointer;
   transform: scale(1);
   transition: transform 0.5s;
 }

@@ -24,6 +24,8 @@
 
       $('.des-container').removeClass('show').addClass('hide');
       $('.des-container').eq(indice).addClass('show').removeClass('hide');
+
+      $(window).scrollTop(0);
     });
 
   });

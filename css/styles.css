@@ -228,7 +228,8 @@ html, body, .container {
 .sections .right-section .titulo {
   display: -ms-flex;
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
+  align-items: center;
   padding: 1em;
   border-bottom: 3px solid #2b2b28;
 }
@@ -238,6 +239,30 @@ html, body, .container {
 .sections .right-section .titulo img {
   width: 10%;
   padding-left: 1em;
+}
+.sections .right-section .titulo .social-media {
+  display: -ms-flex;
+  display: flex;
+  justify-content: flex-start;
+}
+@media (max-width: 1000px) {
+  .sections .right-section .titulo .social-media .social-icon {
+    width: 100%;
+  }
+}
+@media (min-width: 1000px) {
+  .sections .right-section .titulo .social-media .social-icon {
+    width: 30%;
+  }
+}
+.sections .right-section .titulo .social-media .social-icon img {
+  width: 100%;
+  height: auto;
+}
+.sections .right-section .titulo .title {
+  display: -ms-flex;
+  display: flex;
+  justify-content: flex-end;
 }
 .sections .right-section .opciones {
   padding: 1em;

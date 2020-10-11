@@ -556,7 +556,15 @@ a:visited {
   border-bottom: 3px solid #6d87a8;
 }
 .sections .des-section .des-container .text-wrapper p {
-  font-size: 1.5em;
+  font-size: 1.15em;
+}
+.sections .des-section .des-container .text-wrapper ul {
+  margin-left: 3em;
+}
+.sections .des-section .des-container .text-wrapper ul li {
+  list-style-type: circle;
+  margin-bottom: 0.25em;
+  font-size: 1.15em;
 }
 .sections .des-section .des-container .img-wrapper {
   display: -ms-flex;
@@ -569,15 +577,46 @@ a:visited {
 }
 .sections .des-section .des-container .img-wrapper img {
   border: 3px solid #00354a;
+  margin: 1em 0;
 }
 .sections .des-section .des-container .video-wrapper {
-  width: 75%;
+  width: 100%;
 }
 
 span.hashtag, a {
-  color: #000099;
+  color: #dddadb;
+  font-weight: bold;
 }
 span.hashtag:hover, a:hover {
   text-decoration: underline;
   cursor: pointer;
+}
+
+.facebook-button {
+  background: #1876F2;
+  text-align: center;
+  border: 2px solid #dddadb;
+  border-radius: 10px;
+  padding: 0.25em;
+  margin: 0.5em 0;
+  cursor: pointer;
+}
+
+.icon-wrapper {
+  display: -ms-flex;
+  display: flex;
+}
+.icon-wrapper img {
+  width: 2em;
+  height: auto;
+  margin: 0 0.5em;
+}
+.icon-wrapper p, .icon-wrapper a {
+  width: 100%;
+}
+.icon-wrapper a {
+  display: -ms-flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
