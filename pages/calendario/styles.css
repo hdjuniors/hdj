@@ -492,18 +492,6 @@ a:visited {
 .calendar {
   margin-right: 2%;
 }
-.calendar .list.done::before {
-  content: " ";
-  width: 95%;
-  height: 2px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  z-index: 10000;
-  transform: translateY(-50%);
-  transform: translateX(-50%);
-  background: #dddadb;
-}
 .calendar .list i {
   width: 5%;
   text-align: center;
