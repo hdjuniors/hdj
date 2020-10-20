@@ -12,22 +12,35 @@ h1
   padding: .5em
   border-bottom: 3px solid $galeria-secundario
 
-.gallery
+.opciones
+  @media (max-width: $medium)
+    flex-direction: column
+    justify-content: center
+    align-items: space-between
+  @media (min-width: $medium)
+    flex-direction: row
+    justify-content: space-around
+    align-items: center
+
+  display: -webkit-flex
+  display: -ms-flex
   display: flex
-  flex-wrap: wrap
-  justify-content: space-around
 
-  a
-    margin: .25em
-    border: 3px solid $galeria-secundario
+  padding: 1em
 
-    img
-      height: 200px
-      width: auto
+  .opcion
+    h2, i
+      padding: .25em
 
-      transition: filter 0.5s
+    a
+      color: $font-color
 
-      &:hover
-        filter: grayscale(10)
+    font-size: 3em
+    text-align: center
 
-        transition: filter 0.5s
+    border: 3px solid $font-color
+    padding: .5em 1em
+
+    margin: .5em 0
+
+    background: darken($galeria-primario, 5)

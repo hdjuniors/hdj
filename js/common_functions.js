@@ -25,6 +25,16 @@ function config_menu() {
 
 }
 
+function get_youtube_url(url) {
+  return url + "?rel=0";
+
+  /*
+  Descripcion de parametros:
+   - rel: Muestra videos relacionados al final del videos
+   - modestbranding: Muestra el logo de Youtube
+  */
+}
+
 // GLOBAL VARIABLES
 media_less = 700;
 media_medium = 1000;

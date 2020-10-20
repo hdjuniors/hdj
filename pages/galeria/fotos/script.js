@@ -1,6 +1,6 @@
 (function($) {
 
-  links = [
+  init_links = [
     "https://i.postimg.cc/XJtM4QRX/84303176-3531308590244484-2810629175482777600-o.jpg",
     "https://i.postimg.cc/L6KdWQkb/85058654-3531294196912590-820327204368941056-o.jpg",
     "https://i.postimg.cc/kgskBn00/85058654-3531376226904387-4058325270984130560-o.jpg",
@@ -31,6 +31,8 @@
     "https://i.postimg.cc/MGXrH1bB/87367165-3531390583569618-8052570042228801536-o.jpg"
   ]
 
+  links = []
+
   function cargar_imagenes(images_actual, images_total) {
     $images = $('.gallery').find('a');
 
@@ -46,7 +48,14 @@
     return i;
   }
 
+  function desordenar_enlaces() {
+    links = init_links.sort(function() {return Math.random() - 0.5});
+  }
+  // Esta funcion genera una nueva lista de enlaces ordenados aleatoriamente
+
   $(document).ready(function() {
+
+    desordenar_enlaces()
 
     var window_width = $(window).width();
     var images_to_load;

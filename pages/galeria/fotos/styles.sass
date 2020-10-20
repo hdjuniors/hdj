@@ -1,0 +1,33 @@
+@import "../../../sass/_variables.sass"
+@import "../../../sass/common_styles.sass"
+@import "../../../sass/reset.sass"
+
+.container
+  background: $galeria-primario
+
+h1
+  font-size: 2em
+  text-align: center
+
+  padding: .5em
+  border-bottom: 3px solid $galeria-secundario
+
+.gallery
+  display: flex
+  flex-wrap: wrap
+  justify-content: space-around
+
+  a
+    margin: .25em
+    border: 3px solid $galeria-secundario
+
+    img
+      height: 200px
+      width: auto
+
+      transition: filter 0.5s
+
+      &:hover
+        filter: grayscale(10)
+
+        transition: filter 0.5s

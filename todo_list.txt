@@ -1,6 +1,9 @@
 Lista de tareas pendientes
 
 1) Elegir las imagenes y subirlas. Despues incluirlas en el js de la galeria.
+  (Sería interesante simplificar este proceso).
 2) Convertir todo a JADE e implementar una programacion mas ordenada.
 3) Hacer los dos videos sobre como usar la página.
-4) Hacer base de datos de los cumpleaños de los chicos
+4) Hacer base de datos de los cumpleaños de los chicos.
+5) Agregar para que cuando se copia el enlace aparezca el icono de HDJ.
+6) Agregar barra de controles personalizada para no usar la de Youtube

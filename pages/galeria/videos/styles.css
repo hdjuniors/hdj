@@ -469,37 +469,3 @@ h1 {
   padding: 0.5em;
   border-bottom: 3px solid #dddadb;
 }
-
-.opciones {
-  display: -ms-flex;
-  display: flex;
-  padding: 1em;
-}
-@media (max-width: 1000px) {
-  .opciones {
-    flex-direction: column;
-    justify-content: center;
-    align-items: space-between;
-  }
-}
-@media (min-width: 1000px) {
-  .opciones {
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-  }
-}
-.opciones .opcion {
-  font-size: 3em;
-  text-align: center;
-  border: 3px solid #dddadb;
-  padding: 0.5em 1em;
-  margin: 0.5em 0;
-  background: #d20d60;
-}
-.opciones .opcion h2, .opciones .opcion i {
-  padding: 0.25em;
-}
-.opciones .opcion a {
-  color: #dddadb;
-}

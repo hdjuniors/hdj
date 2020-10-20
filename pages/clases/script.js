@@ -32,17 +32,17 @@
     list.append(listItems.get().reverse());
     // Volteamos la lista de clases para que se vean primero las ultimas
 
-    $('.video-section').find('iframe').attr('src', url_list[0]);
+    $('.video-section').find('iframe').attr('src', get_youtube_url(url_list[0]));
 
     $('.menu-section').find('ul').find('li').on('click', function() {
       indice = $('.menu-section').find('ul').find('li').index($(this));
       url = url_list[indice];
 
-      $('.video-section').find('iframe').attr('src', url);
+      $('.video-section').find('iframe').attr('src', get_youtube_url(url));
 
       $(window).scrollTop(0);
     });
-    // IMPORTANTE: Programa solamente para menus de 1 nivel
+    // IMPORTANTE: Algoritmo solamente para menus de 1 nivel
 
   });
 
