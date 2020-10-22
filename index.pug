@@ -1,0 +1,78 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  meta(http-equiv='X-UA-Compatible' content='ie=edge')
+  title HDJ
+  link(rel='stylesheet' href='css/reset.css')
+  link(rel='stylesheet' href='css/common_styles.css')
+  link(rel='stylesheet' href='css/styles.css')
+  script(src='https://kit.fontawesome.com/5cb641fede.js' crossorigin='anonymous')
+.container
+  .back-video
+    .effect-layer
+    video(src='videos/fondo.mp4' autoplay='' loop='' controls='' muted='')
+  .sections
+    .left-section
+      .img-wrapper
+        .over-text
+          p
+            | &iexcl;Hola! Nosotros somos HDJ. Si no nos conoces, somos un grupo de chicos que cada s&aacute;bado aprendemos
+            | del amor de Dios jugando, divirtiendonos, y disfrutando, porque aprender de Dios no tiene porque
+            | ser aburrido.
+            br
+            br
+            | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;Ac&aacute; pod&eacute;s ver las clases, actividades y desaf&iacute;os de cada semana. En nuestra galer&iacute;a tenemos algunas
+            | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;fotos, tambi&eacute;n los libros que leemos y el calendario con las actividades que vamos a tener. Te invitamos
+            | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;a que disfrutes de todo esto. &iexcl;Y quedate atento a cualquier novedad!
+        img.to_pink(src='images/left-pane.jpg' alt='Campamento HDJ 2020')
+    span.divider
+    .right-section
+      .titulo
+        .social-media
+          .social-icon
+            a(href='https://www.facebook.com/valeria.sandoval.10')
+              img(src='images/icons/facebook.png' alt='Facebook Icon')
+          .social-icon
+            a(href='tel:+54291509496')
+              img(src='images/icons/whatsapp.png' alt='Instagram Icon')
+        .title
+          h1 HD Juniors
+          img(src='images/logo.jpg' alt='Logo HDJ')
+      .opciones
+        ul
+          li
+            a(href='pages/clases/index.html')
+              i.fas.fa-bible
+              |  Clases
+          li
+            a(href='pages/actividades/index.html')
+              i.fas.fa-snowboarding
+              |  Actividades
+          li
+            a(href='pages/desafios/index.html')
+              i.fas.fa-brain
+              |  Desaf&iacute;os
+          li
+            a(href='pages/galeria/index.html')
+              i.fas.fa-camera-retro
+              |  Galer&iacute;a
+          li
+            a(href='pages/libros/index.html')
+              i.fas.fa-book-open
+              |  Libros
+          li
+            a(href='pages/calendario/index.html')
+              i.fas.fa-calendar-check
+              |  Calendario
+          // <li><a href="pages/apoyo_escolar/index.html"><i class="fas fa-chalkboard-teacher"></i> Acceso a clases de apoyo</a></li>
+          li
+            a(href='pages/use_tutorial/index.html')
+              i.fas.fa-question
+              |  &iquest;C&oacute;mo usar la p&aacute;gina?
+    .description-box.hide
+      p
+        | Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+script(type='text/javascript' src='js/jquery.min.js')
+script(type='text/javascript' src='js/common_functions.js')
+script(type='text/javascript' src='js/script.js')

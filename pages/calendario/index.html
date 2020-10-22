@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,83 +7,59 @@
   <link rel="stylesheet" href="styles.css">
   <script src="https://kit.fontawesome.com/5cb641fede.js" crossorigin="anonymous"></script>
 </head>
-<body>
-
-  <div class="container">
-    <!-- La idea es que haya eventos de las ultimas 2 semanas y de las
-        próximas dos semanas o las que ya se sepan con seguridad -->
-
-    <!-- Los eventos llevaran iconos en funcion del tipo de eventos:
-          Por ejemplos, las clases un icono distinto a los desafios, etc.
-
-        CLASES: <i class="fas fa-bible"></i>
-        DESAFIOS: <i class="fas fa-brain"></i>
-        NOTICIAS: <i class="fas fa-snowboarding"></i>
-        ZOOM: <i class="fas fa-video"></i>
-        CUMPLEAÑOS: <i class="fas fa-birthday-cake"></i>
-
-    -->
-
-    <div id="calendar" class="calendar">
-
-      <h1>Calendario HDJ <i class="gotobottom fas fa-angle-down"></i></h1>
-
-      <div class="events" data-date="27/09">
-        <h2 class="fecha">Domingo 27 de Septiembre</h2>
-        <ul class="list">
-          <li><i class="fas fa-bible"></i> Clase 20 - La historia de Rut - 10:00hs</li>
-          <li><i class="fas fa-snowboarding"></i> Nuevas actividades</li>
-        </ul>
-      </div>
-
-      <div class="events" data-date="4/10">
-        <h2 class="fecha">Domingo 4 de Octubre</h2>
-        <ul class="list">
-          <li><i class="fas fa-bible"></i> Clase 21 - La Caída - 10:00hs</li>
-          <li><i class="fas fa-snowboarding"></i> Nuevas actividades</li>
-        </ul>
-      </div>
-
-      <div class="events" data-date="11/10">
-        <h2 class="fecha">Domingo 11 de Octubre</h2>
-        <ul class="list">
-          <li><i class="fas fa-bible"></i> Clase 22 - La torre de Babel - 10:00hs</li>
-          <li><i class="fas fa-snowboarding"></i> Nuevas actividades</li>
-        </ul>
-      </div>
-
-      <div class="events" data-date="18/10">
-        <ul class="list">
-          <h2 class="fecha">Domingo 18 de Octubre</h2>
-          <li><i class="fas fa-bible"></i> Clase 23 - La historia de Sansón - 10:00hs</li>
-          <li><i class="fas fa-snowboarding"></i> Nuevas actividades</li>
-        </ul>
-      </div>
-
+<div class="container">
+  <!--
+  La idea es que haya eventos de las ultimas 2 semanas y de las
+  próximas dos semanas o las que ya se sepan con seguridad
+  -->
+  <!--
+  Los eventos llevaran iconos en funcion del tipo de eventos:
+  Por ejemplos, las clases un icono distinto a los desafios, etc.
+  CLASES: <i class="fas fa-bible"></i>
+  DESAFIOS: <i class="fas fa-brain"></i>
+  NOTICIAS: <i class="fas fa-snowboarding"></i>
+  ZOOM: <i class="fas fa-video"></i>
+  CUMPLEAÑOS: <i class="fas fa-birthday-cake"></i>
+  -->
+  <div class="calendar" id="calendar">
+    <h1>Calendario HDJ <i class="gotobottom fas fa-angle-down"></i></h1>
+    <div class="events" data-date="27/09">
+      <h2 class="fecha">Domingo 27 de Septiembre</h2>
+      <ul class="list">
+        <li><i class="fas fa-bible"></i> Clase 20 - La historia de Rut - 10:00hs</li>
+        <li><i class="fas fa-snowboarding"></i> Nuevas actividades</li>
+      </ul>
     </div>
-
-  <div id="datetable" class="datetable">
-
+    <div class="events" data-date="4/10">
+      <h2 class="fecha">Domingo 4 de Octubre</h2>
+      <ul class="list">
+        <li><i class="fas fa-bible"></i> Clase 21 - La Ca&iacute;da - 10:00hs</li>
+        <li><i class="fas fa-snowboarding"></i> Nuevas actividades</li>
+      </ul>
+    </div>
+    <div class="events" data-date="11/10">
+      <h2 class="fecha">Domingo 11 de Octubre</h2>
+      <ul class="list">
+        <li><i class="fas fa-bible"></i> Clase 22 - La torre de Babel - 10:00hs</li>
+        <li><i class="fas fa-snowboarding"></i> Nuevas actividades</li>
+      </ul>
+    </div>
+    <div class="events" data-date="18/10">
+      <ul class="list">
+        <h2 class="fecha">Domingo 18 de Octubre</h2>
+        <li><i class="fas fa-bible"></i> Clase 23 - La historia de Sans&oacute;n - 10:00hs</li>
+        <li><i class="fas fa-snowboarding"></i> Nuevas actividades</li>
+      </ul>
+    </div>
+  </div>
+  <div class="datetable" id="datetable">
     <h1>Horarios</h1>
     <ul class="list">
-
       <li><i class="fas fa-clock"></i> Clases: Domingos 10hs</li>
-
     </ul>
-
   </div>
-
-  <div class="gototop">
-
-    <i class="fas fa-angle-up"></i>
-
-  </div>
-
-  </div>
-
-  <script type="text/javascript" src="../../js/jquery.min.js"></script>
-  <script type="text/javascript" src="../../js/common_functions.js"></script>
-	<script type="text/javascript" src="script.js"></script>
-
-</body>
-</html>
+  <div class="gototop"><i class="fas fa-angle-up"></i></div>
+</div>
+<script type="text/javascript" src="../../js/jquery.min.js"></script>
+<script type="text/javascript" src="../../js/common_functions.js"></script>
+<script type="text/javascript" src="script.js"></script>

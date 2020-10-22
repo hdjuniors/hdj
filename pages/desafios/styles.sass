@@ -3,10 +3,6 @@
 @import "../../sass/reset.sass"
 
 .sections
-  display: -webkit-flex
-  display: -ms-flex
-  display: flex
-
   background: $desafios-primario
 
   .menu-section
@@ -29,8 +25,6 @@
     flex-direction: column
 
     h1, p
-      text-align: left
-
       width: 80%
 
       padding: .25em 0
@@ -52,6 +46,7 @@
       width: 70%
 
     display: none
+    // Si no se hace desaparecer divide a la mitad el espacio del present
 
     .des-container
       &.show
@@ -77,13 +72,14 @@
         position: relative
         bottom: .1em
 
-      .text-wrapper
+      .text-wrapper, .image-wrapper, .video-wrapper
         @media (max-width: $medium)
           width: 100%
         @media (min-width: $medium)
           width: 75%
 
-        h1, p
+      .text-wrapper
+        h1, p, ul, li
           padding: .3em
 
         h1
@@ -99,8 +95,6 @@
           li
             list-style-type: circle
 
-            margin-bottom: .25em
-
             font-size: 1.15em
 
       .img-wrapper
@@ -110,10 +104,6 @@
         justify-content: center
         align-items: center
         flex-wrap: wrap
-
-        width: 75%
-
-        width: 100%
 
         img
           border: 3px solid darken($desafios-primario, 25)
@@ -128,9 +118,6 @@
         //
         //   margin: 1%
         // NO BORRAR ESTO: ES PARA MOSTRAR VARIAS IMAGENES
-
-      .video-wrapper
-        width: 100%
 
 span.hashtag, a
   color: $font-color

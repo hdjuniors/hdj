@@ -1,0 +1,71 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  meta(http-equiv='X-UA-Compatible' content='ie=edge')
+  title Calendario HDJ
+  link(rel='stylesheet' href='styles.css')
+  script(src='https://kit.fontawesome.com/5cb641fede.js' crossorigin='anonymous')
+.container
+  //
+    La idea es que haya eventos de las ultimas 2 semanas y de las
+    próximas dos semanas o las que ya se sepan con seguridad
+  //
+    Los eventos llevaran iconos en funcion del tipo de eventos:
+    Por ejemplos, las clases un icono distinto a los desafios, etc.
+    CLASES: <i class="fas fa-bible"></i>
+    DESAFIOS: <i class="fas fa-brain"></i>
+    NOTICIAS: <i class="fas fa-snowboarding"></i>
+    ZOOM: <i class="fas fa-video"></i>
+    CUMPLEAÑOS: <i class="fas fa-birthday-cake"></i>
+  #calendar.calendar
+    h1
+      | Calendario HDJ 
+      i.gotobottom.fas.fa-angle-down
+    .events(data-date='27/09')
+      h2.fecha Domingo 27 de Septiembre
+      ul.list
+        li
+          i.fas.fa-bible
+          |  Clase 20 - La historia de Rut - 10:00hs
+        li
+          i.fas.fa-snowboarding
+          |  Nuevas actividades
+    .events(data-date='4/10')
+      h2.fecha Domingo 4 de Octubre
+      ul.list
+        li
+          i.fas.fa-bible
+          |  Clase 21 - La Ca&iacute;da - 10:00hs
+        li
+          i.fas.fa-snowboarding
+          |  Nuevas actividades
+    .events(data-date='11/10')
+      h2.fecha Domingo 11 de Octubre
+      ul.list
+        li
+          i.fas.fa-bible
+          |  Clase 22 - La torre de Babel - 10:00hs
+        li
+          i.fas.fa-snowboarding
+          |  Nuevas actividades
+    .events(data-date='18/10')
+      ul.list
+        h2.fecha Domingo 18 de Octubre
+        li
+          i.fas.fa-bible
+          |  Clase 23 - La historia de Sans&oacute;n - 10:00hs
+        li
+          i.fas.fa-snowboarding
+          |  Nuevas actividades
+  #datetable.datetable
+    h1 Horarios
+    ul.list
+      li
+        i.fas.fa-clock
+        |  Clases: Domingos 10hs
+  .gototop
+    i.fas.fa-angle-up
+script(type='text/javascript' src='../../js/jquery.min.js')
+script(type='text/javascript' src='../../js/common_functions.js')
+script(type='text/javascript' src='script.js')

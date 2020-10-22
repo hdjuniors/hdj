@@ -7,3 +7,7 @@ Lista de tareas pendientes
 4) Hacer base de datos de los cumpleaños de los chicos.
 5) Agregar para que cuando se copia el enlace aparezca el icono de HDJ.
 6) Agregar barra de controles personalizada para no usar la de Youtube
+7) Agregar un list-item mas para chicos
+
+DETALLES
+ - El menu se achica un poco cuando se selecciona un desafio
