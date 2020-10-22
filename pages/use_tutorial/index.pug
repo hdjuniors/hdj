@@ -1,3 +1,5 @@
+include ../../pug/common_functions.pug
+
 doctype html
 head
   meta(charset='UTF-8')
@@ -6,9 +8,7 @@ head
   title &iquest;C&oacute;mo usar la p&aacute;gina?
   link(rel='stylesheet' href='styles.css')
 .container
-  pre
-    .video-responsive
-      iframe(src="", frameborder="0", allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture", allowfullscreen)
+  +youtube_video('')
 script(src='../../js/jquery.min.js')
 script(src='../../js/common_functions.js')
 script(src='script.js' charset='utf-8')

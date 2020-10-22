@@ -1,3 +1,5 @@
+include ../../pug/common_functions.pug
+
 doctype html
 head
   meta(charset='UTF-8')
@@ -36,9 +38,7 @@ head
         li Clase 20 - La historia de Rut
         li Clase 21 - La Ca&iacute;da
     .video-section
-      pre
-        .video-responsive
-          iframe(src='', frameborder='0', allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture', allowfullscreen)
+      +youtube_video('')
 
 script(src='../../js/jquery.min.js' charset='utf-8')
 script(src='../../js/common_functions.js' charset='utf-8')

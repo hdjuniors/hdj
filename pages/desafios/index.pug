@@ -1,3 +1,5 @@
+include ../../pug/common_functions.pug
+
 doctype html
 head
   meta(charset='UTF-8')
@@ -67,9 +69,7 @@ head
             i.fas.fa-check
             |  Deben HACER UNA COREOGRAF&Iacute;A con la siguiente canci&oacute;n &#x1F447;&#x1F3FB;
           .video-wrapper
-            pre
-              .video-responsive
-                iframe(src="https://www.youtube.com/embed/Jh2nBmU2olM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
+            +youtube_video('https://www.youtube.com/embed/Jh2nBmU2olM')
           p Tambi&eacute;n tiene que aparecer en el video:
           p Unos lentes de &#x1F453; o de &#x1F576;
           p Una gorra &#x1F9E2;
@@ -172,9 +172,7 @@ head
             img.icon(src='../../images/icons/facebook.png' alt='Facebook Icon')
             a(href='https://www.facebook.com/vale.sandoval.10') Vale Sandoval
         .video-wrapper
-          pre
-            .video-responsive
-              iframe(src="https://www.youtube.com/embed/e8Qx690juH4", frameborder="0", allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture", allowfullscreen)
+          +youtube_video('https://www.youtube.com/embed/e8Qx690juH4')
         .img-wrapper
           img(src='images/desafio_5.jpg' alt='Quinto Desafio HDJ')
       // DESAFIO 5
@@ -267,9 +265,7 @@ head
             img.icon(src='../../images/icons/facebook.png' alt='Facebook Icon')
             a(href='https://www.facebook.com/vale.sandoval.10') Vale Sandoval
         .video-wrapper
-          pre
-            .video-responsive
-              iframe(src="https://www.youtube.com/embed/W6ldgAm5G7c", frameborder="0", allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture", allowfullscreen)
+          +youtube_video('https://www.youtube.com/embed/W6ldgAm5G7c')
         .img-wrapper
           img(src='images/desafio_9.jpg' alt='Noveno Desafio HDJ')
       // DESAFIO 9
@@ -287,9 +283,7 @@ head
             img.icon(src='../../images/icons/facebook.png' alt='Facebook Icon')
             a(href='https://www.facebook.com/vale.sandoval.10') Vale Sandoval
         .video-wrapper
-          pre
-            .video-responsive
-              iframe(src="https://www.youtube.com/embed/p6efSztK1Gk", frameborder="0", allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture", allowfullscreen)
+          +youtube_video('https://www.youtube.com/embed/p6efSztK1Gk')
         .img-wrapper
           img(src='images/desafio_10.jpg' alt='Decimo Desafio HDJ')
       // DESAFIO 10
