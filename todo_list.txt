@@ -8,7 +8,7 @@ Lista de tareas pendientes
 5) Agregar para que cuando se copia el enlace aparezca el icono de HDJ.
 6) Agregar barra de controles personalizada para no usar la de Youtube
 7) Agregar un list-item mas acorde a chicos
-8) Cambiar la fuente de letras a una mas infantil
 
 DETALLES
  - El menu se achica un poco cuando se selecciona un desafio
+ - En las actividades al abrir la primera imagen, se abre agrandada
