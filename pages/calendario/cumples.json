@@ -1,12 +1,238 @@
 [
   {
-  "nombre": "Joel",
-  "apellido": "Ermantraut",
-  "fecha": "10/10/97"
-},
-{
-  "nombre": "Valeria",
-  "apellido": "Sandoval",
-  "fecha": "20/09/87"
-}
+  "nombre": "Sofía",
+  "apellido": "Cayuleo",
+  "fecha": "28/10/2016"
+  },
+  {
+    "nombre": "Gael",
+    "apellido": "Bichi",
+    "fecha": "6/11/2016"
+  },
+  {
+    "nombre": "Thiago",
+    "apellido": "Bichi",
+    "fecha": "22/11/2013"
+  },
+  {
+    "nombre": "Alma",
+    "apellido": "Brau",
+    "fecha": "15/5/2014"
+  },
+  {
+    "nombre": "Priscila",
+    "apellido": "Moron",
+    "fecha": "11/3/2015"
+  },
+  {
+    "nombre": "Kiara",
+    "apellido": "Vera",
+    "fecha": "18/12/2013"
+  },
+  {
+    "nombre": "Jonas",
+    "apellido": "Llanos",
+    "fecha": "2/10/2016"
+  },
+  {
+    "nombre": "Mateo",
+    "apellido": "Brau",
+    "fecha": "26/4/2013"
+  },
+  {
+    "nombre": "Elias",
+    "apellido": "Perez",
+    "fecha": "11/8/2013"
+  },
+  {
+    "nombre": "Pilar",
+    "apellido": "Cayuleo",
+    "fecha": "28/2/2014"
+  },
+  {
+    "nombre": "Gael",
+    "apellido": "Bichi",
+    "fecha": "6/11/2016"
+  },
+  {
+    "nombre": "Bianca",
+    "apellido": "Perez",
+    "fecha": "6/9/2018"
+  },
+  {
+    "nombre": "Ian",
+    "apellido": "Rodriguez",
+    "fecha": "3/5/2014"
+  },
+  {
+    "nombre": "Aimara",
+    "apellido": "Maldonado",
+    "fecha": "3/12/2013"
+  },
+  {
+    "nombre": "Caleb",
+    "apellido": "Perez",
+    "fecha": "21/12/2019"
+  },
+  {
+    "nombre": "Juana",
+    "apellido": "Tello",
+    "fecha": "3/12/2019"
+  },
+  {
+    "nombre": "Ambar",
+    "apellido": "Navarrete",
+    "fecha": "20/5/2017"
+  },
+  {
+    "nombre": "Galo",
+    "apellido": "Vera",
+    "fecha": "24/3/2020"
+  },
+  {
+    "nombre": "Uriel",
+    "apellido": "Ganga",
+    "fecha": "17/6/2015"
+  },
+  {
+    "nombre": "Gael",
+    "apellido": "Ganga",
+    "fecha": "7/9/2019"
+  },
+  {
+    "nombre": "Mateo",
+    "apellido": "Medina",
+    "fecha": "19/9/2019"
+  },
+  {
+    "nombre": "Priscila",
+    "apellido": "Cayuleo",
+    "fecha": "22/8/2011"
+  },
+  {
+    "nombre": "Valentina",
+    "apellido": "Sanger",
+    "fecha": "23/5/2011"
+  },
+  {
+    "nombre": "Genaro",
+    "apellido": "Ruiz",
+    "fecha": "22/2/2012"
+  },
+  {
+    "nombre": "Facundo",
+    "apellido": "Miller",
+    "fecha": "11/10/2011"
+  },
+  {
+    "nombre": "Abigail",
+    "apellido": "Muñoz",
+    "fecha": "30/10/2013"
+  },
+  {
+    "nombre": "Uma",
+    "apellido": "Paillan",
+    "fecha": "12/9/2011"
+  },
+  {
+    "nombre": "Ambar",
+    "apellido": "Galvan",
+    "fecha": "11/2/2011"
+  },
+  {
+    "nombre": "Benjamin",
+    "apellido": "Maldonado",
+    "fecha": "1/2/2012"
+  },
+  {
+    "nombre": "Dana",
+    "apellido": "Tello",
+    "fecha": "12/7/2011"
+  },
+  {
+    "nombre": "Isabella",
+    "apellido": "Roldan",
+    "fecha": "22/11/2012"
+  },
+  {
+    "nombre": "Santino",
+    "apellido": "Medina",
+    "fecha": "27/6/2014"
+  },
+  {
+    "nombre": "Catalina",
+    "apellido": "Obreque",
+    "fecha": "26/4/2008"
+  },
+  {
+    "nombre": "Agustina",
+    "apellido": "Bidela",
+    "fecha": "20/5/2010"
+  },
+  {
+    "nombre": "Adriel",
+    "apellido": "Carrera",
+    "fecha": "23/9/2010"
+  },
+  {
+    "nombre": "Morena",
+    "apellido": "Destro",
+    "fecha": "15/5/2004"
+  },
+  {
+    "nombre": "Joaquín",
+    "apellido": "Hirsch",
+    "fecha": "9/4/2009"
+  },
+  {
+    "nombre": "Julieta",
+    "apellido": "Arias",
+    "fecha": "9/3/2009"
+  },
+  {
+    "nombre": "Oriana",
+    "apellido": "Ferrari",
+    "fecha": "2/2/2009"
+  },
+  {
+    "nombre": "Eluney",
+    "apellido": "Muñoz",
+    "fecha": "14/6/2008"
+  },
+  {
+    "nombre": "Máximo",
+    "apellido": "Paillán",
+    "fecha": "9/6/2009"
+  },
+  {
+    "nombre": "Morena",
+    "apellido": "Carrera",
+    "fecha": "17/11/2008"
+  },
+  {
+    "nombre": "Milagros",
+    "apellido": "Brau",
+    "fecha": "24/2/2006"
+  },
+  {
+    "nombre": "Isis",
+    "apellido": "Ferrari",
+    "fecha": "31/8/2006"
+  },
+  {
+    "nombre": "Tobias",
+    "apellido": "Carrera",
+    "fecha": "18/3/2007"
+  },
+  {
+    "nombre": "Laureano",
+    "apellido": "Brau",
+    "fecha": "24/2/2006"
+  },
+  {
+    "nombre": "Lara",
+    "apellido": "Morales",
+    "fecha": "23/11/2005"
+  },
+
 ]

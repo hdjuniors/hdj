@@ -560,7 +560,7 @@ a:visited {
   margin-left: 3em;
 }
 .sections .des-section .des-container .text-wrapper ul li {
-  list-style-type: circle;
+  list-style-image: url("../../images/icons/party-bullet.png");
   font-size: 1.15em;
 }
 .sections .des-section .des-container .img-wrapper {

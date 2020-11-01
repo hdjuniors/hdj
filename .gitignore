@@ -70,5 +70,7 @@ $RECYCLE.BIN/
 todo_list.txt
 html
 images/logo.psd
+pages/calendario/cumples.xlsx
+pages\calendario\~$cumples.xlsx
 
 # End of https://www.toptal.com/developers/gitignore/api/prepros,windows,sublimetext

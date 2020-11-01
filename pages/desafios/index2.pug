@@ -1,0 +1,91 @@
+include ../../pug/common_functions.pug
+
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  meta(http-equiv='X-UA-Compatible' content='ie=edge')
+  title Desaf&iacute;os
+  link(rel='stylesheet' href='styles.css')
+  script(src='https://kit.fontawesome.com/5cb641fede.js' crossorigin='anonymous')
+.container
+  .sections
+    .menu-section
+      h1.hide
+        | Desaf&iacute;os 
+        span.toggle-icon
+          i.fas.fa-plus
+          i.fas.fa-minus
+      ul
+        li
+          p Desaf&iacute;o 1
+        li
+          p Desaf&iacute;o 2
+        li
+          p Desaf&iacute;o 3
+        li
+          p Desaf&iacute;o 4
+        li
+          p Desaf&iacute;o 5
+        li
+          p Desaf&iacute;o 6
+        li
+          p Desaf&iacute;o 7
+        li
+          p Desaf&iacute;o 8
+        li
+          p Desaf&iacute;o 9
+        li
+          p Desaf&iacute;o 10
+        li
+          p Desaf&iacute;o 11
+        li
+          p Desaf&iacute;o 12
+        li
+          p Desaf&iacute;o 13
+        li
+          p Desaf&iacute;o 14
+          
+    .present-section
+      h1 &iexcl;Desaf&iacute;os HDJ!
+      p
+        | En HDJ tenemos desaf&iacute;os que los chicos pueden hacer para ganarse algunos premios &#x1F973;
+      p Esos desaf&iacute;os duran una semana, y cuando termina ya no hay m&aacute;s premios &#x1F615;
+      p Pero si quer&eacute;s los pod&eacute;s hacer igual y mandarnos la foto &#x1F4AA;&#x1F3FB;&#x1F606;
+      p &iexcl;Eleg&iacute; alguno de los desaf&iacute;os del men&uacute;! &#x1F64C;&#x1F64C;
+      
+    .des-section
+      .des-container.hide
+        .text-wrapper
+          h1 Desaf&iacute;o 1
+          p
+            | Atenci&oacute;n 
+            span.hashtag
+              a(href='https://www.facebook.com/hashtag/hdj') #HDJ
+          p
+            | Ac&aacute; les dejamos nuestro 
+            span.hashtag
+              a(href='https://www.facebook.com/hashtag/primerdesafíohdj') #PrimerDesafioHDJ
+          p La consigna es la siguiente:
+          p
+            i.fas.fa-check
+            |  Deben HACER UNA COREOGRAF&Iacute;A con la siguiente canci&oacute;n &#x1F447;&#x1F3FB;
+          .video-wrapper
+            +youtube_video('https://www.youtube.com/embed/Jh2nBmU2olM')
+          p Tambi&eacute;n tiene que aparecer en el video:
+          p Unos lentes de &#x1F453; o de &#x1F576;
+          p Una gorra &#x1F9E2;
+          p Una media, puesta en tu mano &#x270B;&#x1F3FB; o brazo &#x1F4AA;&#x1F3FB;
+          p
+            | Adem&aacute;s, tiene que haber un ADULTO en el video (como pap&aacute;, mam&aacute;, abuelo, hermano, alguien que viva con vos)
+          p Puede estar bailando o parado haciendo alguna pose copada &#x1F60E;
+          p Luego de grabarlo debes enviarlo a esta persona:
+          .icon-wrapper.facebook-button
+            img.icon(src='../../images/icons/facebook.png' alt='Facebook Icon')
+            a(href='https://www.facebook.com/vale.sandoval.10') Vale Sandoval
+        .img-wrapper
+          img(src='images/desafio_1.jpg' alt='Primer Desafio HDJ')
+      // DESAFIO 1
+script(src='../../js/jquery.min.js' charset='utf-8')
+script(src='../../js/common_functions.js' charset='utf-8')
+script(src='script.js' charset='utf-8')
