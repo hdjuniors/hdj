@@ -16,8 +16,9 @@
 		"Cada semana hay un desafio nuevo, mirá el de esta semana",
 		"Mira la hermosa galería de fotos de HDJ",
 		"Acá podés leer todo tipo de libros y cuentos",
+                "¡Mira la fecha de las próximas clases y actividades!",
 		"Si es la primera vez que entrás, seguro queres saber como usar la página"
-	]
+	];
 
 	function color_iteration() {
 		$('.divider').attr('class', "divider " + colores[colores_indice]);

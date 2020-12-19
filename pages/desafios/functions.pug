@@ -1,0 +1,10 @@
+mixin text_wrap(p_list)
+	each val, index in p_list
+		p= val
+
+-let enlace = "https://www.facebook.com/joel.ermantraut"
+-let name = "Joel Ermantraut"
+mixin social_button()
+	.icon-wrapper.facebook-button
+		img.icon(src='../../images/icons/facebook.png' alt='Facebook Icon')
+		a(href=enlace)= name

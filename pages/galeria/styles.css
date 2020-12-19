@@ -5,6 +5,16 @@ html, body, .container {
   color: #dddadb;
   font-family: "Patrick Hand", cursive;
 }
+@media (max-width: 1000px) {
+  html, body, .container {
+    font-size: 12px;
+  }
+}
+@media (min-width: 1000px) {
+  html, body, .container {
+    font-size: 16px;
+  }
+}
 
 pre .video-responsive {
   position: relative;
@@ -120,6 +130,14 @@ pre .video-responsive iframe {
 
 ::-webkit-scrollbar-thumb:hover {
   background: rgba(255, 255, 255, 0.75);
+}
+
+*::selection {
+  background: #703faf;
+}
+
+*::-moz-selection {
+  background: #703faf;
 }
 
 html, body, div, span, applet, object, iframe,
@@ -475,12 +493,13 @@ h1 {
   display: -ms-flex;
   display: flex;
   padding: 1em;
+  height: calc(100vh - 3em);
 }
 @media (max-width: 1000px) {
   .opciones {
     flex-direction: column;
-    justify-content: center;
-    align-items: space-between;
+    justify-content: space-around;
+    align-items: center;
   }
 }
 @media (min-width: 1000px) {
@@ -491,16 +510,26 @@ h1 {
   }
 }
 .opciones .opcion {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #dddadb;
+  padding: 1em;
   font-size: 3em;
   text-align: center;
   border: 3px solid #dddadb;
-  padding: 0.5em 1em;
-  margin: 0.5em 0;
   background: #d20d60;
+}
+@media (max-width: 1000px) {
+  .opciones .opcion {
+    width: 80%;
+  }
+}
+@media (min-width: 1000px) {
+  .opciones .opcion {
+    width: auto;
+  }
 }
 .opciones .opcion h2, .opciones .opcion i {
   padding: 0.25em;
-}
-.opciones .opcion a {
-  color: #dddadb;
 }

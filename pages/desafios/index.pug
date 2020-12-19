@@ -1,4 +1,5 @@
 include ../../pug/common_functions.pug
+include functions.pug
 
 doctype html
 head
@@ -68,8 +69,9 @@ head
           p
             i.fas.fa-check
             |  Deben HACER UNA COREOGRAF&Iacute;A con la siguiente canci&oacute;n &#x1F447;&#x1F3FB;
-          .video-wrapper
-            +youtube_video('https://www.youtube.com/embed/Jh2nBmU2olM')
+        .video-wrapper
+          +youtube_video('https://www.youtube.com/embed/Jh2nBmU2olM')
+        .text-wrapper
           p Tambi&eacute;n tiene que aparecer en el video:
           p Unos lentes de &#x1F453; o de &#x1F576;
           p Una gorra &#x1F9E2;
@@ -78,11 +80,9 @@ head
             | Adem&aacute;s, tiene que haber un ADULTO en el video (como pap&aacute;, mam&aacute;, abuelo, hermano, alguien que viva con vos)
           p Puede estar bailando o parado haciendo alguna pose copada &#x1F60E;
           p Luego de grabarlo debes enviarlo a esta persona:
-          .icon-wrapper.facebook-button
-            img.icon(src='../../images/icons/facebook.png' alt='Facebook Icon')
-            a(href='https://www.facebook.com/vale.sandoval.10') Vale Sandoval
+          +social_button()
         .img-wrapper
-          img(src='images/desafio_1.jpg' alt='Primer Desafio HDJ')
+          img(src=pre_url + 'images/desafio_1.jpg' alt='Primer Desafio HDJ')
       // DESAFIO 1
       .des-container.hide
         .text-wrapper
@@ -112,11 +112,11 @@ head
               | Por &uacute;ltimo le ped&iacute;s a los adultos con quien vivas que te saquen una foto y la sub&iacute;s a tus redes sociales
               | o pod&eacute;s enviarla a esta persona para subirla.
           .icon-wrapper.facebook-button
-            img.icon(src='../../images/icons/facebook.png' alt='Facebook Icon')
+            img.icon(src=pre_url + '../../images/icons/facebook.png' alt='Facebook Icon')
             a(href='https://www.facebook.com/vale.sandoval.10') Vale Sandoval
           p A crear se ha dicho &#x1F58B;&#x2712;&#x270D;
         .img-wrapper
-          img(src='images/desafio_2.jpg' alt='Segundo Desafio HDJ')
+          img(src=pre_url + 'images/desafio_2.jpg' alt='Segundo Desafio HDJ')
       // DESAFIO 2
       .des-container.hide
         .text-wrapper
@@ -134,15 +134,13 @@ head
           p Dibujito animado &#x1F601;&#x1F603;&#x1F604;&#x1F917;&#x1F642;&#x263A;
           p O algo inventado por vos &#x1F47D;&#x1F47E;&#x1F916;&#x1F47B;
           p Luego te pedimos que les mandes las fotos a esta persona: 
-          .icon-wrapper.facebook-button
-            img.icon(src='../../images/icons/facebook.png' alt='Facebook Icon')
-            a(href='https://www.facebook.com/vale.sandoval.10') Vale Sandoval
+          +social_button()
           p
             | Vamos 
             a(href='https://www.facebook.com/hashtag/hdj') #HDJ
             |  a divertirnos en familia, a crear y alegrar el coraz&oacute;n de Jes&uacute;s &#x1F388;&#x1F4AF;&#x1F9E9;&#x1F453;
         .img-wrapper
-          img(src='images/desafio_3.jpg' alt='Tercer Desafio HDJ')
+          img(src=pre_url + 'images/desafio_3.jpg' alt='Tercer Desafio HDJ')
       // DESAFIO 3
       .des-container.hide
         .text-wrapper
@@ -153,12 +151,10 @@ head
             a(href='https://www.facebook.com/hashtag/hdj') #HDJ
           p
             | Deben sacarse una foto con su JUGUETE FAVORITO o el JUGUETE con el que m&aacute;s han jugado en este tiempo donde estamos en casa sin salir, y enviarsela a esta persona:
-          .icon-wrapper.facebook-button
-            img.icon(src='../../images/icons/facebook.png' alt='Facebook Icon')
-            a(href='https://www.facebook.com/vale.sandoval.10') Vale Sandoval
+          +social_button()
           p  &#x1F600;&#x1F923;&#x1F61C;&#x1F47D;&#x1F54D;&#x1F94B;&#x1F3AE;&#x1F3AF;&#x1F3B0;&#x1F579;&#x1F3B3;&diams;&clubs;&#x1FA80;&#x1FA81;&#x1F9F8; 
         .img-wrapper
-          img(src='images/desafio_4.jpg' alt='Cuarto Desafio HDJ')
+          img(src=pre_url + 'images/desafio_4.jpg' alt='Cuarto Desafio HDJ')
       // DESAFIO 4
       .des-container.hide
         .text-wrapper
@@ -168,13 +164,11 @@ head
             | Dejamos el desaf&iacute;o #5 para nuestros 
             a(href='https://www.facebook.com/hashtag/hdj') #HDJ
           p Cuando lo hayas hecho, no olvides mandarselo a:
-          .icon-wrapper.facebook-button
-            img.icon(src='../../images/icons/facebook.png' alt='Facebook Icon')
-            a(href='https://www.facebook.com/vale.sandoval.10') Vale Sandoval
+          +social_button()
         .video-wrapper
           +youtube_video('https://www.youtube.com/embed/e8Qx690juH4')
         .img-wrapper
-          img(src='images/desafio_5.jpg' alt='Quinto Desafio HDJ')
+          img(src=pre_url + 'images/desafio_5.jpg' alt='Quinto Desafio HDJ')
       // DESAFIO 5
       .des-container.hide
         .text-wrapper
@@ -192,11 +186,9 @@ head
             a(href='https://www.facebook.com/hashtag/YoCuidoLoQueDiosMeDio') #HDJ
           p Podes hacerlo solo o en familia &#x1F46A;&#x1F468;&zwj;&#x1F467;&zwj;&#x1F467; 
           p Despu&eacute;s, mand&aacute;selo a:
-          .icon-wrapper.facebook-button
-            img.icon(src='../../images/icons/facebook.png' alt='Facebook Icon')
-            a(href='https://www.facebook.com/vale.sandoval.10') Vale Sandoval
+          +social_button()
         .img-wrapper
-          img(src='images/desafio_6.jpg' alt='Sexto Desafio HDJ')
+          img(src=pre_url + 'images/desafio_6.jpg' alt='Sexto Desafio HDJ')
       // DESAFIO 6
       .des-container.hide
         .text-wrapper
@@ -219,11 +211,9 @@ head
             li
               | Si tu abuelo est&aacute; con Jes&uacute;s podes contarnos que hac&iacute;an cuando estaba con vos y tu familia o mostrarnos una foto que tengas de &eacute;l/ella
           p No olvides enviarselo a:
-          .icon-wrapper.facebook-button
-            img.icon(src='../../images/icons/facebook.png' alt='Facebook Icon')
-            a(href='https://www.facebook.com/vale.sandoval.10') Vale Sandoval
+          +social_button()
         .img-wrapper
-          img(src='images/desafio_7.jpg' alt='Septimo Desafio HDJ')
+          img(src=pre_url + 'images/desafio_7.jpg' alt='Septimo Desafio HDJ')
       // DESAFIO 7
       .des-container.hide
         .text-wrapper
@@ -243,11 +233,9 @@ head
           p Sapos &#x1F438; 
           p &iexcl;&iexcl;&iexcl;O cualquier figura o juego que se te ocurra!!! &#x1F4AA;&#x1F4AA;
           p No olvides enviarla a:
-          .icon-wrapper.facebook-button
-            img.icon(src='../../images/icons/facebook.png' alt='Facebook Icon')
-            a(href='https://www.facebook.com/vale.sandoval.10') Vale Sandoval
+          +social_button()
         .img-wrapper
-          img(src='images/desafio_8.jpg' alt='Octavo Desafio HDJ')
+          img(src=pre_url + 'images/desafio_8.jpg' alt='Octavo Desafio HDJ')
       // DESAFIO 8
       .des-container.hide
         .text-wrapper
@@ -261,13 +249,11 @@ head
           p Pueden ser listones, escarapelas, dibujos o lo que se imaginen &#x1F973;&#x1F973;&#x1F973;
           p Dios est&aacute; en el lugar #1 de nuestro &hearts;
           p Despu&eacute;s de hacerlo, mandasel&oacute; a:
-          .icon-wrapper.facebook-button
-            img.icon(src='../../images/icons/facebook.png' alt='Facebook Icon')
-            a(href='https://www.facebook.com/vale.sandoval.10') Vale Sandoval
+          +social_button()
         .video-wrapper
           +youtube_video('https://www.youtube.com/embed/W6ldgAm5G7c')
         .img-wrapper
-          img(src='images/desafio_9.jpg' alt='Noveno Desafio HDJ')
+          img(src=pre_url + 'images/desafio_9.jpg' alt='Noveno Desafio HDJ')
       // DESAFIO 9
       .des-container.hide
         .text-wrapper
@@ -279,13 +265,11 @@ head
             |  y la consigna est&aacute; relacionada con el Segundo Mandamiento que aprendimos con la se&ntilde;o Nati &#x1F973;&#x1F60E;
           p Valen nos explica y nos muestra un ejemplo de como realizarla &#x1F4F7;&#x1F4DD; 
           p No olvides mandarsel&oacute; a:
-          .icon-wrapper.facebook-button
-            img.icon(src='../../images/icons/facebook.png' alt='Facebook Icon')
-            a(href='https://www.facebook.com/vale.sandoval.10') Vale Sandoval
+          +social_button()
         .video-wrapper
           +youtube_video('https://www.youtube.com/embed/p6efSztK1Gk')
         .img-wrapper
-          img(src='images/desafio_10.jpg' alt='Decimo Desafio HDJ')
+          img(src=pre_url + 'images/desafio_10.jpg' alt='Decimo Desafio HDJ')
       // DESAFIO 10
       .des-container.hide
         .text-wrapper
@@ -304,11 +288,10 @@ head
               | Aclaramos que se pueden hacer una de las dos opciones o ambas. Lo importante es hacerlo y aprender algunas letras
               | La idea es que podamos aprender la palabra de Dios y compartirla con los que m&aacute;s podamos &#x1F4AA;&#x1F3FB;
           p No olviden mandarle el video a esta persona:
-          .icon-wrapper.facebook-button
-            img.icon(src='../../images/icons/facebook.png' alt='Facebook Icon')
-            a(href='https://www.facebook.com/vale.sandoval.10') Vale Sandoval
-        .img-wrapper
-          img(src='images/desafio_11.jpg' alt='Desafio 11 HDJ')
+          +social_button()
+        .video-wrapper
+          +youtube_video('https://www.youtube.com/embed/1KKUaHXpcgo')
+
       // DESAFIO 11
       .des-container.hide
         .text-wrapper
@@ -336,11 +319,9 @@ head
             a(href='https://vm.tiktok.com/JFaB8Cn/') https://vm.tiktok.com/JFaB8Cn/
             a(href='https://vm.tiktok.com/JFaYsfa/') https://vm.tiktok.com/JFaYsfa/
           p Mandale tu TIK TOK a:
-          .icon-wrapper.facebook-button
-            img.icon(src='../../images/icons/facebook.png' alt='Facebook Icon')
-            a(href='https://www.facebook.com/vale.sandoval.10') Vale Sandoval
+          +social_button()
         .img-wrapper
-          img(src='images/desafio_12.jpg' alt='Desafio 12 HDJ')
+          img(src=pre_url + 'images/desafio_12.jpg' alt='Desafio 12 HDJ')
       // DESAFIO 12
       .des-container.hide
         .text-wrapper
@@ -358,27 +339,24 @@ head
               |               Si los encuentran, an&oacute;tenlos y suban una foto de los errores anotados!!! &#x1F58A;&#x1F4F7;
           p Aclaramos que pueden hacer uno de los dos desaf&iacute;o, o ambos &#x1F973;&#x1F60F; 
           p Mandenle sus fotos a esta personita:
-          .icon-wrapper.facebook-button
-            img.icon(src='../../images/icons/facebook.png' alt='Facebook Icon')
-            a(href='https://www.facebook.com/vale.sandoval.10') Vale Sandoval
+          +social_button()
         .img-wrapper
-          img(src='images/desafio_13.jpg' alt='Desafio 13 HDJ')
+          img(src=pre_url + 'images/desafio_13.jpg' alt='Desafio 13 HDJ')
       // DESAFIO 13
       .des-container.hide
         .text-wrapper
           h1 Desaf&iacute;o 14
           p Buen d&iacute;a familia &#x1F917; 
           p
-            | Este es el desafpio semanal de 
+            | Este es el desafío semanal de 
             a(href='https://www.facebook.com/hashtag/hdj') #HDJ
           p Este desaf&iacute;o tiene que ver con el mandamiento 5 que nos ense&ntilde;o la se&ntilde;o Sofi
           p Para entender que hacer, mira la clase &#x1F609; 
           p Despu&eacute;s de hacerlo, mandaselo a:
-          .icon-wrapper.facebook-button
-            img.icon(src='../../images/icons/facebook.png' alt='Facebook Icon')
-            a(href='https://www.facebook.com/vale.sandoval.10') Vale Sandoval
+          +social_button()
         .img-wrapper
-          img(src='images/desafio_14.jpg' alt='Desafio 14 HDJ')
+          img(src=pre_url + 'images/desafio_14.jpg' alt='Desafio 14 HDJ')
+      // DESAFIO 14
 script(src='../../js/jquery.min.js' charset='utf-8')
 script(src='../../js/common_functions.js' charset='utf-8')
 script(src='script.js' charset='utf-8')

@@ -1,3 +1,26 @@
+include ../../pug/common_functions.pug
+
+mixin events(date, fecha, clases=[], desafios=[], noticias=[], zoom=[])
+    .events(data-date=date)    
+        ul.list
+            h2= fecha
+            each item in clases
+                li
+                    i.fas.fa-bible
+                    = item
+            each item in desafios
+                li
+                    i.fas.fa-brain
+                    = item
+            each item in noticias
+                li
+                    i.fas.fa-snowboarding
+                    = item
+            each item in zoom
+                li
+                    i.fas.fa-video
+                    = item
+
 doctype html
 head
   meta(charset='UTF-8')
@@ -22,42 +45,8 @@ head
     h1
       | Calendario HDJ 
       i.gotobottom.fas.fa-angle-down
-    .events(data-date='27/09')
-      h2.fecha Domingo 27 de Septiembre
-      ul.list
-        li
-          i.fas.fa-bible
-          |  Clase 20 - La historia de Rut - 10:00hs
-        li
-          i.fas.fa-snowboarding
-          |  Nuevas actividades
-    .events(data-date='4/10')
-      h2.fecha Domingo 4 de Octubre
-      ul.list
-        li
-          i.fas.fa-bible
-          |  Clase 21 - La Ca&iacute;da - 10:00hs
-        li
-          i.fas.fa-snowboarding
-          |  Nuevas actividades
-    .events(data-date='11/10')
-      h2.fecha Domingo 11 de Octubre
-      ul.list
-        li
-          i.fas.fa-bible
-          |  Clase 22 - La torre de Babel - 10:00hs
-        li
-          i.fas.fa-snowboarding
-          |  Nuevas actividades
-    .events(data-date='18/10')
-      ul.list
-        h2.fecha Domingo 18 de Octubre
-        li
-          i.fas.fa-bible
-          |  Clase 23 - La historia de Sans&oacute;n - 10:00hs
-        li
-          i.fas.fa-snowboarding
-          |  Nuevas actividades
+    +events('20/12', 'Domingo 20 de Diciembre', ['Cierre de HDJ 2020'])
+
   #datetable.datetable
     h1 Horarios
     ul.list

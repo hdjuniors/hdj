@@ -1,8 +1,15 @@
+include pug/common_functions.pug
+
 doctype html
 head
   meta(charset='UTF-8')
   meta(name='viewport' content='width=device-width, initial-scale=1.0')
   meta(http-equiv='X-UA-Compatible' content='ie=edge')
+  //- Meta etiquetas para la imagen de vista previa
+  meta(property="og:title", content="HDJuniors")
+  meta(property="og:url", content="http://hdjuniors.github.io/newhdj")
+  meta(property="og:image", content="images/logo.jpg")
+  meta(property="og:description", content="Sitio de HDJ")
   title HDJ
   link(rel='stylesheet' href='css/reset.css')
   link(rel='stylesheet' href='css/common_styles.css')
@@ -32,13 +39,13 @@ head
         .social-media
           .social-icon
             a(href='https://www.facebook.com/valeria.sandoval.10')
-              img(src='images/icons/facebook.png' alt='Facebook Icon')
+              img(src=pre_url + 'images/icons/facebook.png' alt='Facebook Icon')
           .social-icon
             a(href='tel:+54291509496')
-              img(src='images/icons/whatsapp.png' alt='Instagram Icon')
+              img(src=pre_url + 'images/icons/whatsapp.png' alt='Instagram Icon')
         .title
           h1 HD Juniors
-          img(src='images/logo.jpg' alt='Logo HDJ')
+          img(src=pre_url + 'images/logo.jpg' alt='Logo HDJ')
       .opciones
         ul
           li

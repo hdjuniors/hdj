@@ -6,6 +6,11 @@ html, body, .container
   color: $font-color
   font-family: $font-family
 
+  @media (max-width: $medium)
+    font-size: 12px
+  @media (min-width: $medium)
+    font-size: 16px
+
 // Etiqueta "pre" reservada para los videos embedidos de YouTube
 pre
   .video-responsive
@@ -115,3 +120,8 @@ pre
 
 ::-webkit-scrollbar-thumb:hover
   background: rgba(white, 0.75)
+
+*::selection
+  background: $purple
+*::-moz-selection
+  background: $purple

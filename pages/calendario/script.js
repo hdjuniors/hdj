@@ -90,7 +90,7 @@
 
   $(document).ready(function() {
 
-    add_birthdays();
+    // add_birthdays();
     // Al cargar la pagina, accede a un archivo JSON, y se fija si hay cumpleaños
     // en las ultimas o proximas dos semanas, y los agrega al calendario
 

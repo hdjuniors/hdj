@@ -5,6 +5,16 @@ html, body, .container {
   color: #dddadb;
   font-family: "Patrick Hand", cursive;
 }
+@media (max-width: 1000px) {
+  html, body, .container {
+    font-size: 12px;
+  }
+}
+@media (min-width: 1000px) {
+  html, body, .container {
+    font-size: 16px;
+  }
+}
 
 pre .video-responsive {
   position: relative;
@@ -120,6 +130,14 @@ pre .video-responsive iframe {
 
 ::-webkit-scrollbar-thumb:hover {
   background: rgba(255, 255, 255, 0.75);
+}
+
+*::selection {
+  background: #703faf;
+}
+
+*::-moz-selection {
+  background: #703faf;
 }
 
 html, body, div, span, applet, object, iframe,
@@ -484,6 +502,7 @@ html, body, .container {
   justify-content: center;
   align-items: center;
   width: 100%;
+  padding: 2em;
 }
 .sections .present-section h1 {
   text-align: center;

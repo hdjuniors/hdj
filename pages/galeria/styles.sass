@@ -15,8 +15,8 @@ h1
 .opciones
   @media (max-width: $medium)
     flex-direction: column
-    justify-content: center
-    align-items: space-between
+    justify-content: space-around
+    align-items: center
   @media (min-width: $medium)
     flex-direction: row
     justify-content: space-around
@@ -28,19 +28,28 @@ h1
 
   padding: 1em
 
-  .opcion
-    h2, i
-      padding: .25em
+  height: calc(100vh - 3em)
 
-    a
-      color: $font-color
+  .opcion
+    display: flex
+    justify-content: center
+    align-items: center
+
+    color: $font-color
+
+    padding: 1em
 
     font-size: 3em
     text-align: center
 
     border: 3px solid $font-color
-    padding: .5em 1em
-
-    margin: .5em 0
 
     background: darken($galeria-primario, 5)
+
+    @media (max-width: $medium)
+      width: 80%
+    @media (min-width: $medium)
+      width: auto
+
+    h2, i
+      padding: .25em

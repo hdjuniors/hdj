@@ -1,4 +1,5 @@
 include data.pug
+include ../../pug/common_functions.pug
 
 doctype html
 head
@@ -20,7 +21,7 @@ head
       
   .sections
     .menu-section
-      h1.hide
+      h1.show
         | Actividades
         span.toggle-icon
           i.fas.fa-plus
@@ -82,9 +83,9 @@ head
                 +activity(key, val[4])
         // Clase de 12 y 13 años
     .act-section
-      iframe(width='795' height='690' frameborder='0' src='https://es.educaplay.com/juego/6472472-quinto_mandamiento.html')
+      iframe(width='795' height='690' frameborder='0' src='')
     .image-section
-      img(src='activities/cuarto_mandamiento/a12y13_1.jpg' alt='Actividad')
+      img(src="" alt='Actividad')
     .present-section
       h1
         | &iexcl;Selecciona una de las actividades del men&uacute;!

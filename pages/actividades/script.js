@@ -1,5 +1,19 @@
 (function($) {
 
+  function config_menu() {
+    if (isMobile()) {
+      $('.menu-section > h1').on('click', function() {
+        $this = $(this);
+
+        if ($this.hasClass('hide')) $this.removeClass('hide').addClass('show').parent().find('.accordions').slideDown(500);
+        else $this.removeClass('show').addClass('hide').parent().find('.accordions').slideUp(500);
+      });
+      // No hace falta incorporar estilos, las clases son solamente para
+      // saber si la "cajita" esta abierta o cerrada
+    }
+
+  }
+
   function change_url(link) {
     $act_section = $('.act-section');
     $image_section = $('.image-section');

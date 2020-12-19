@@ -1,3 +1,5 @@
+include ../../pug/common_functions.pug
+
 doctype html
 head
   meta(charset='UTF-8')
@@ -37,7 +39,7 @@ head
 
   mixin add_book(name)
     a.libro(href='pdfs/' + name + '.pdf')
-      img(src='images/' + name + '.jpg')
+      img(src=pre_url + 'images/' + name + '.jpg', alt=name)
       
   each book in books
     +add_book(book)

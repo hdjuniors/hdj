@@ -1,3 +1,5 @@
+include ../../pug/common_functions.pug
+
 doctype html
 head
   meta(charset='UTF-8')
@@ -9,11 +11,9 @@ head
 .container
   h1 &iexcl;Mira a nuestros HDJ!
   .opciones
-    .opcion
-      a(href='fotos/index.html')
-        i.fas.fa-camera-retro
-        h2 Fotos
-    .opcion
-      a(href='videos/index.html')
-        i.fab.fa-youtube
-        h2 Videos
+    a.opcion(href='fotos/index.html')
+      i.fas.fa-camera-retro
+      h2 Fotos
+    a.opcion(href='videos/index.html')
+      i.fab.fa-youtube
+      h2 Videos

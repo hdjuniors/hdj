@@ -9,21 +9,21 @@ function isMobile() {
   );
 }
 
-function config_menu() {
-  if (isMobile()) {
-    $('.menu-section > ul').slideUp(0);
+// function config_menu() {
+//   if (isMobile()) {
+//     $('.menu-section > ul').slideUp(0);
 
-    $('.menu-section').find('h1').on('click', function() {
-      $this = $(this);
+//     $('.menu-section > h1').on('click', function() {
+//       $this = $(this);
 
-      if ($this.hasClass('hide')) $this.removeClass('hide').addClass('show').parent().find('ul').slideDown(500);
-      else $this.removeClass('show').addClass('hide').parent().find('ul').slideUp(500);
-    });
-    // No hace falta incorporar estilos, las clases son solamente para
-    // saber si la "cajita" esta abierta o cerrada
-  }
+//       if ($this.hasClass('hide')) $this.removeClass('hide').addClass('show').parent().find('ul').slideDown(500);
+//       else $this.removeClass('show').addClass('hide').parent().find('ul').slideUp(500);
+//     });
+//     // No hace falta incorporar estilos, las clases son solamente para
+//     // saber si la "cajita" esta abierta o cerrada
+//   }
 
-}
+// }
 
 function get_youtube_url(url) {
   return url + "?rel=0";

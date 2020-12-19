@@ -26,7 +26,31 @@
     "https://www.youtube.com/embed/FlBZvr3C6uo", // 23
     "https://www.youtube.com/embed/yjVL5zubISQ", // 24
     "https://www.youtube.com/embed/m9J7gyzxCy8", // 25
+    "https://www.youtube.com/embed/EdZIh_RkSN8", // 26
+    "https://www.youtube.com/embed/RkfJAYlqvZk", // 27
+    "https://www.youtube.com/embed/iJcAcda59uo", // 28
+    "https://www.youtube.com/embed/DzY5L24IO1M", // 29
+    "https://www.youtube.com/embed/ZzvyOSV_W10", // 30
+    "https://www.youtube.com/embed/VQ4xlWLr-i0", // 31
   ].reverse();
+  // LISTA DE VIDEOS DE YOUTUBE DE LAS CLASES
+  // SON LOS ENLACES DE LOS ELEMENTOS EMBED QUE SE OBTIENE DE INSERTAR
+
+  function config_menu() {
+    if (isMobile()) {
+      $('.menu-section > ul').slideUp(0);
+
+      $('.menu-section > h1').on('click', function() {
+        $this = $(this);
+
+        if ($this.hasClass('hide')) $this.removeClass('hide').addClass('show').parent().find('ul').slideDown(500);
+        else $this.removeClass('show').addClass('hide').parent().find('ul').slideUp(500);
+      });
+      // No hace falta incorporar estilos, las clases son solamente para
+      // saber si la "cajita" esta abierta o cerrada
+    }
+
+  }
 
   $(document).ready(function() {
     config_menu();
@@ -41,6 +65,9 @@
     $('.menu-section').find('ul').find('li').on('click', function() {
       indice = $('.menu-section').find('ul').find('li').index($(this));
       url = url_list[indice];
+
+      $(this).parent().find('.selected').removeClass('selected');
+      $(this).addClass('selected');
 
       $('.video-section').find('iframe').attr('src', get_youtube_url(url));
 

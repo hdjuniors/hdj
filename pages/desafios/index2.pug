@@ -1,4 +1,5 @@
 include ../../pug/common_functions.pug
+include functions.pug
 
 doctype html
 head
@@ -58,6 +59,7 @@ head
       .des-container.hide
         .text-wrapper
           h1 Desaf&iacute;o 1
+
           p
             | Atenci&oacute;n 
             span.hashtag
@@ -70,21 +72,22 @@ head
           p
             i.fas.fa-check
             |  Deben HACER UNA COREOGRAF&Iacute;A con la siguiente canci&oacute;n &#x1F447;&#x1F3FB;
-          .video-wrapper
-            +youtube_video('https://www.youtube.com/embed/Jh2nBmU2olM')
-          p Tambi&eacute;n tiene que aparecer en el video:
-          p Unos lentes de &#x1F453; o de &#x1F576;
-          p Una gorra &#x1F9E2;
-          p Una media, puesta en tu mano &#x270B;&#x1F3FB; o brazo &#x1F4AA;&#x1F3FB;
-          p
-            | Adem&aacute;s, tiene que haber un ADULTO en el video (como pap&aacute;, mam&aacute;, abuelo, hermano, alguien que viva con vos)
-          p Puede estar bailando o parado haciendo alguna pose copada &#x1F60E;
-          p Luego de grabarlo debes enviarlo a esta persona:
-          .icon-wrapper.facebook-button
-            img.icon(src='../../images/icons/facebook.png' alt='Facebook Icon')
-            a(href='https://www.facebook.com/vale.sandoval.10') Vale Sandoval
+        .video-wrapper
+          +youtube_video('https://www.youtube.com/embed/Jh2nBmU2olM')
+
+        .text-wrapper
+          +text_wrap([
+              "También tiene que aparecer en el video:",
+              "Unos lentes de &#x1F453; o de &#x1F576;",
+              "Una gorra &#x1F9E2;",
+              "Una media, puesta en tu mano &#x270B;&#x1F3FB; o brazo &#x1F4AA;&#x1F3FB;",
+              "Adem&aacute;s, tiene que haber un ADULTO en el video (como pap&aacute;, mam&aacute;, abuelo, hermano, alguien que viva con vos)",
+              "Puede estar bailando o parado haciendo alguna pose copada &#x1F60E;",
+              "Luego de grabarlo debes enviarlo a esta persona:"
+            ])
+          +social_button()
         .img-wrapper
-          img(src='images/desafio_1.jpg' alt='Primer Desafio HDJ')
+          img(src=pre_url + 'images/desafio_1.jpg' alt='Primer Desafio HDJ')
       // DESAFIO 1
 script(src='../../js/jquery.min.js' charset='utf-8')
 script(src='../../js/common_functions.js' charset='utf-8')
