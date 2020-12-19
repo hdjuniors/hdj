@@ -17,7 +17,7 @@ head
         p= name
         ul
           each val, index in list
-            li(data-url=val)= "Actividad " + (index + 1)
+            li(data-url= pre_url + val)= "Actividad " + (index + 1)
       
   .sections
     .menu-section
