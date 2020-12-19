@@ -9,7 +9,7 @@ head
   title Actividades
   link(rel='stylesheet' href='styles.css')
   script(src='https://kit.fontawesome.com/5cb641fede.js' crossorigin='anonymous')
-.container  
+.container
   mixin activity(name, list)
     if (list.length)
       //- Para los casos de edades que no tienen actividades
@@ -17,7 +17,7 @@ head
         p= name
         ul
           each val, index in list
-            li(data-url= pre_url + val)= "Actividad " + (index + 1)
+            li(data-url= val)= "Actividad " + (index + 1)
       
   .sections
     .menu-section
