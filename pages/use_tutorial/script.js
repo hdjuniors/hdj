@@ -3,9 +3,10 @@
   $(document).ready(function() {
 
     if (isMobile()) {
-      $('iframe').attr('src', "https://www.youtube.com/embed/n94JOHFH6L8");
+      $('iframe').attr('src', "https://www.youtube.com/embed/A9I_uKkCMX8");
     } else {
-      $('iframe').attr('src', "https://www.youtube.com/embed/po07o124rJA");
+      $('iframe').attr('src', "https://www.youtube.com/embed/A9I_uKkCMX8");
+
     }
 
   });
