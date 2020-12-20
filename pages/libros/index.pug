@@ -39,7 +39,7 @@ head
 
   mixin add_book(name)
     a.libro(href='pdfs/' + name + '.pdf')
-      img(src=pre_url + 'images/' + name + '.jpg', alt=name)
+      img(src=pre_url + '/pages/libros/images/' + name + '.jpg', alt=name)
       
   each book in books
     +add_book(book)
