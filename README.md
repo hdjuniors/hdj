@@ -6,8 +6,11 @@ Este es un sitio para que los chicos de HDJ puedan acceder a un conjunto de herr
 El sitio incluye secciones para:
 1. Clases
 2. Actividades
-3. Galeria
-4. Libros
-5. Calendario
-6. Contacto
-7. Tutorial del uso del sitio
+3. Desafíos
+4. Galería
+-- Fotos
+-- Videos
+5. Libros
+6. Calendario
+7. Contacto
+8. Tutorial del uso del sitio
