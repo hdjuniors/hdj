@@ -8,8 +8,8 @@ El sitio incluye secciones para:
 2. Actividades
 3. Desafíos
 4. Galería
-  - Fotos
-  - Videos
+&nbsp;&nbsp;&nbsp;&nbsp;- Fotos
+&nbsp;&nbsp;&nbsp;&nbsp;- Videos
 5. Libros
 6. Calendario
 7. Contacto
