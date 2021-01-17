@@ -18,5 +18,5 @@ El sitio incluye secciones para:
 7. Contacto.
 8. Tutorial del uso del sitio.
 
-## Autoría
+### Autoría
 [Joel Ermantraut](https://github.com/joelermantraut1)
