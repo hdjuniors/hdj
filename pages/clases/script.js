@@ -32,6 +32,7 @@
     "https://www.youtube.com/embed/DzY5L24IO1M", // 29
     "https://www.youtube.com/embed/ZzvyOSV_W10", // 30
     "https://www.youtube.com/embed/VQ4xlWLr-i0", // 31
+    "https://odysee.com/$/embed/hdj-clase-10/ef1f76760ea8cbcbdc6cf624c9b941570edfe445?r=3vbNdwZ7b2FSEjXGHdLuWCSBW1fFERDH"
   ].reverse();
   // LISTA DE VIDEOS DE YOUTUBE DE LAS CLASES
   // SON LOS ENLACES DE LOS ELEMENTOS EMBED QUE SE OBTIENE DE INSERTAR
