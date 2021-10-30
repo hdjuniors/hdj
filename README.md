@@ -19,4 +19,4 @@ El sitio incluye secciones para:
 8. Tutorial del uso del sitio.
 
 ### Autoría
-[Joel Ermantraut](https://github.com/joelermantraut1)
+[Joel Ermantraut](https://github.com/joelermantraut)
